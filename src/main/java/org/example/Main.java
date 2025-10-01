@@ -5,8 +5,8 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+    DuplicateCharactersCount obj = new DuplicateCharactersCount();
+    obj.counter();
 
-        RearrangeWordsByLength obj1 = new RearrangeWordsByLength();
-        obj1.arrangeWords();
     }
 }
