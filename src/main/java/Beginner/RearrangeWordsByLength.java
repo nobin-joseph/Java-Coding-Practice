@@ -27,9 +27,9 @@ public class RearrangeWordsByLength {
 
 
         System.out.println(Arrays.toString(split));
-        String result="";
+        StringBuilder result = new StringBuilder();
         for (String n :split){
-            result = result + " " +n;
+            result.append(n);
         }
         System.out.println(result);
     }
