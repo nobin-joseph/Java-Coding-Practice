@@ -1,24 +1,24 @@
 package Beginner;
 
-import java.util.Arrays;
 
 public class ReverseString {
 
     public void reverse (){
-        String input = "nobin joseph";
-        String result ="";
+        String input = "Nobin joseph";
         char [] charArray = input.toCharArray() ;
 
 
+        StringBuilder result =new StringBuilder();
+
         for(int i=charArray.length-1; i>=0;i--){
 
-            result=result+charArray[i]  ;
+            result.append(charArray[i]  );
         }
         System.out.println(result);
 
         // using string Builder
         StringBuilder str = new StringBuilder(input);
-        str.reverse();
+        System.out.println(str.reverse());
 
 
     }
