@@ -13,13 +13,20 @@ public class ExampleClass {
     public static void display(Cars obj){
         System.out.println(obj.brand);
         System.out.println(obj.color);
-        System.out.println(obj.price);
+        System.out.println(obj.getPrice());
     }
 
 }
 
-class Cars{
-    String brand, color, price;
+ class Cars{
+    String brand, color;
+
+     public String getPrice() {
+         return price;
+     }
+
+     private String price;
+
 
     Cars(String brand,String color,String price){
         this.brand=brand;
