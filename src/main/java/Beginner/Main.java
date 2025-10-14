@@ -1,33 +1,25 @@
 package Beginner;
 
-public class Main{
+class Main {
+
 
     public static void main(String[] args) {
-        Example obj = new Example();
-         //obj.showMessage();
-         obj.display(); // ✅ Allowed — indirectly calls private
 
+
+        A obj = new B();
     }
-
-
-
-
 }
 
-class Example {
-
-    private void showMessage() {
-        System.out.println("This is a private method");
+class A {
+    public void show() {
+        System.out.println("this id in class A ");
     }
+}
 
-    public void display() {
-        // ✅ Can access private method from inside the class
-        showMessage();
-    }
+class B extends A{
 
-    class A{
-        void Show(){
-            System.out.println("inner class method");
-        }
-    }
+    public void show(){
+        System.out.println("this id in class B ");
+    };
+
 }
