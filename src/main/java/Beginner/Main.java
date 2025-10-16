@@ -1,10 +1,6 @@
 package Beginner;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 class Main {
 
@@ -13,17 +9,13 @@ class Main {
 
         String input = "My name is nobin joseph";
 
-        List<String> word = new ArrayList<>();
-
-        word.addAll(Arrays.asList(input.split(" ")));
+        List<String> word = new ArrayList<>(Arrays.asList(input.split(" ")));
 
         System.out.println(word.reversed());
 
-        ArrayList<String> wordsList =new ArrayList<>();
+        ArrayList<String> wordsList =new ArrayList<>(Arrays.asList(input.split(" ")));
 
-        wordsList.addAll(Arrays.asList(input.split(" ")));
-
-        Collections.sort(wordsList,Collections.reverseOrder());
+        wordsList.sort(Comparator.naturalOrder());
 
         System.out.println();
 
